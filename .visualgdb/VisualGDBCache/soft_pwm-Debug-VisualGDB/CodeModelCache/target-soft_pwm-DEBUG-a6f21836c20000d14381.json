@@ -1,0 +1,410 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "soft_pwm"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_bsp_based_executable",
+			"target_link_libraries",
+			"apply_linker_script",
+			"set_bsp_core_properties_from_vars",
+			"find_bsp"
+		],
+		"files" : 
+		[
+			"C:/Program Files (x86)/Sysprogs/VisualGDB/CMake/embedded/root.cmake",
+			"CMakeLists.txt",
+			"C:/Program Files (x86)/Sysprogs/VisualGDB/CMake/embedded/bsp.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 119,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 139,
+				"parent" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 392,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 79,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 80,
+				"parent" : 1
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g3 -O0"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-mcpu=cortex-m4"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-mfpu=fpv4-sp-d16"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-mhard-float"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 9,
+					"define" : "STM32F407xx"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "USE_HAL_DRIVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "C:/Repos/1ELE911_2026/assignment1-non-blocking-pwm-zzehgalinha/Core/Inc"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Repos/1ELE911_2026/assignment1-non-blocking-pwm-zzehgalinha/Drivers/STM32F4xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Repos/1ELE911_2026/assignment1-non-blocking-pwm-zzehgalinha/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Repos/1ELE911_2026/assignment1-non-blocking-pwm-zzehgalinha/Drivers/CMSIS/Device/ST/STM32F4xx/Include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Repos/1ELE911_2026/assignment1-non-blocking-pwm-zzehgalinha/Drivers/CMSIS/Include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 9,
+			"id" : "BSP::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "soft_pwm::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g3 -O0",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-\"TC:/Repos/1ELE911_2026/assignment1-non-blocking-pwm-zzehgalinha/STM32F407VGTX_FLASH.ld\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "-Wl,-Map=soft_pwm.map",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "-Wl,--no-warn-rwx-segments",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "-Wl,-gc-sections",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "-mcpu=cortex-m4",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "-mfpu=fpv4-sp-d16",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "-mhard-float",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C",
+		"traceableCommandFragments" : 
+		[
+			{
+				"backtrace" : 9,
+				"fragment" : "BSP"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-\"TC:/Repos/1ELE911_2026/assignment1-non-blocking-pwm-zzehgalinha/STM32F407VGTX_FLASH.ld\""
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "-Wl,-Map=soft_pwm.map"
+			}
+		]
+	},
+	"name" : "soft_pwm",
+	"nameOnDisk" : "soft_pwm",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files (x86)/Sysprogs/VisualGDB/CMake/embedded/dummy.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Core/Src/gpio.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Core/Src/main.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Core/Src/stm32f4xx_hal_msp.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Core/Src/stm32f4xx_it.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Core/Src/syscalls.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Core/Src/sysmem.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Core/Src/system_stm32f4xx.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Core/Startup/startup_stm32f407vgtx.S.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/CMakeFiles/BSP.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}
